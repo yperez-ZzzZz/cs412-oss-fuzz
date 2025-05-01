@@ -19,6 +19,6 @@ RUN apt-get update && \
     apt-get install -y make autoconf automake libtool zlib1g-dev
 
 RUN git clone --depth 1 https://github.com/madler/zlib.git
-RUN git clone --depth 1 https://github.com/yperez-ZzzZz/libpng-better.git
-RUN cp libpng-better/contrib/oss-fuzz/build.sh $SRC
+RUN git clone --depth 1 https://github.com/yperez-ZzzZz/libpng-better.git libpng
+RUN cp libpng/contrib/oss-fuzz/build.sh $SRC
 WORKDIR libpng
