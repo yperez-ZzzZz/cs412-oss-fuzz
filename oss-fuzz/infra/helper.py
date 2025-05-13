@@ -1437,6 +1437,8 @@ def run_fuzzer(args):
                                                    fuzzer=args.fuzzer_name)
     ])
 
+  args.fuzzer_args.append('-max_total_time=14420')
+
   run_args.extend([
       '-v',
       '%s:/out' % args.project.out,
