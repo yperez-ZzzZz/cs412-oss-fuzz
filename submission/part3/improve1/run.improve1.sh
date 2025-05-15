@@ -16,7 +16,7 @@ cd $folder
 # setup fuzzers
 
 # clone libpng fork
-git clone -b $branch git@github.com:yperez-ZzzZz/libpng-better.git libpng
+git clone https://github.com/yperez-ZzzZz/libpng-better.git -b $branch libpng
 
 # clone oss-fuzz
 git clone https://github.com/google/oss-fuzz.git
